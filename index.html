@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="lu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Füir dech</title>
+  <style>
+    :root {
+      --bg1: #ffd6dc;
+      --bg2: #ffe8ec;
+      --card: rgba(255, 255, 255, 0.65);
+      --text: #6b3f46;
+      --accent: #f29cab;
+      --accent-dark: #de7f92;
+      --white: #ffffff;
+      --shadow: 0 10px 30px rgba(179, 96, 114, 0.18);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(1000px, 92%);
+      margin: 0 auto;
+      padding: 28px 0 60px;
+    }
+
+    .hero,
+    .section {
+      background: var(--card);
+      backdrop-filter: blur(6px);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 22px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: var(--accent-dark);
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    .letter-box {
+      background: rgba(255,255,255,0.6);
+      border-radius: 18px;
+      padding: 18px;
+      white-space: pre-line;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .caption {
+      margin-top: 8px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    .memory-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .memory-card {
+      background: rgba(255,255,255,0.65);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      padding-bottom: 24px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .hero,
+      .section {
+        padding: 20px;
+      }
+
+      .gallery img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <section class="hero">
+      <h1>Fir Dech</h1>
+      <p class="intro">
+        Hallo Charlotte ech wosst net ganz waat ech fir dech nach maachen kann,
+        doweinst maachen ech daat wouran ech am "besten"sinn an erstellen dir dathei
+        nemmen fir ais.
+      </p>
+
+      <div class="center">
+        <button class="btn" onclick="document.getElementById('song').play()">
+          Song starten
+        </button>
+      </div>
+
+      <audio id="song" controls>
+        <source src="song.mp3" type="audio/mpeg">
+        Dein Browser unterstützt kein Audio.
+      </audio>
+    </section>
+
+    <section class="section">
+      <h2>Mein Breif</h2>
+      <div class="letter-box">
+Ech wollt dir heimadder merci soen fir dei schein Zeit deis du mir ginn hues an alles waats du fir mech
+gemaach hues.Ech wees dass du daat net mei kanns mais ech well dir soen dass ech daat wierklech eecht mengen,
+waat ech dir alles gesoot hunn.
+An ech mengen et och wierklech eecht zwechen ais zwee, ech wees dass keen mir daat gefill kann ginn waats du mir
+gess an ech well dir daat gefill nemmen zereck ginn obs de gleefs oder net ob ech daat kann.
+Ech kann et ,an ech hunn elo verstaan wei wichteg daat ass, och wann mir elo warscheinlech "nemmen" best kolegen
+kennen sinn, bass du mir mei wichteg.
+Ech wees dass et neicht ännert egal waat an wei oft ech dir et soen awer ech well net opginn.
+
+Wierklech merci fir alles.
+Ech probeierren dech ze verstoen an ech verstinn dech och obwuel ech daat iergendwei net well.
+Ech hunn dech emmer nach zu 300% gären an wärt et och emmer hunn.
+Ech vermessen daat gefill, waat ech emmer haat/hunn wann ech bei dir sinn.
+        
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>E puer Biller</h2>
+      <div class="gallery">
+        <div>
+          <img src="IMG_1716.jpg" alt="Bild 1">
+          <div class="caption">De 17.Dezember 2022 kann ais keen weg huelen<3 .</div>
+        </div>
+        <div>
+          <img src="<IMG_1714.jpg" alt="Bild 2">
+          <div class="caption">Oder D´eicht keier wou ech bei dir Geschloof hunn</div>
+        </div>
+        <div>
+          <img src="IMG_1713.jpg" alt="Bild 3">
+          <div class="caption">An och all dei aaner momenter.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Erennerrungen</h2>
+      <div class="memory-cards">
+        <div class="memory-card">
+          <h3> </h3>
+          <p>Wourun ech mech nach ganz gutt errenerren kann ass Silvester 2022 op 2023 do hunn ech den
+            ganzen owend domadder verbruet ze iwwerleen op ech dech nees froen soll op mir zesummen kennen sinn.</p>
+        </div>
+        <div class="memory-card">
+          <h3>Erinnerung 2</h3>
+          <p>Oder un all deenen keierren wou mir stonnen laang Roblox gespillt hunn.</p>
+        </div>
+        <div class="memory-card">
+          <h3>Erinnerung 3</h3>
+          <p>Oder ais eicht vakanz.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Gemaach nemmen fir dech.
+    </footer>
+  </div>
+</body>
+</html>
